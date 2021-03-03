@@ -12,7 +12,7 @@ public class EndGame : MonoBehaviour
     {
         gm = GameManager.GetInstance();
         message = GameObject.Find("UI_EndText").GetComponent<Text>();
-        message.text = gm.lifes > 0  ? "You win!" : "You lost!";
+        message.text = gm.lifes > 0  ? "You win!" : "You lose!";
     }
 
     public void RestartGame()
